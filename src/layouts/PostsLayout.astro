@@ -1,7 +1,9 @@
 ---
+import HomeLayout from './HomeLayout.astro'
 const { frontmatter } = Astro.props
 ---
-
-<h1>{frontmatter.title}</h1>
-<h2>Written by {frontmatter.author}</h2>
-<slot />
+<HomeLayout>
+    <h1>{frontmatter.title}</h1>
+    <h2>Written by {frontmatter.author}</h2>
+    <slot />
+</HomeLayout>
