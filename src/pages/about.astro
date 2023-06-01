@@ -3,7 +3,10 @@ import HomeLayout from '../layouts/HomeLayout.astro'
 const pageTitle = "About Me"
 
 const myDogs = ["Booty", "flakes", "cereal", "pancakes"];
-const happy = true;
+
+
+
+import MoodButton from '../components/MoodButton'
 ---
 
 <HomeLayout title="About Me">
@@ -13,5 +16,7 @@ const happy = true;
         {myDogs.map((dog)=> <li>{dog}</li>)}
     </ul>
 
-    {happy ? <p>I feel good!</p> : <p>I am sads</p>}
+    
+
+    <MoodButton client:load />
 </HomeLayout>
