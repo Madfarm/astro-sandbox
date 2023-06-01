@@ -1,7 +1,17 @@
 ---
 import HomeLayout from '../layouts/HomeLayout.astro'
+const pageTitle = "About Me"
+
+const myDogs = ["Booty", "flakes", "cereal", "pancakes"];
+const happy = true;
 ---
 
 <HomeLayout title="About Me">
-    <h1>Hello there!</h1>
+    <h1>{pageTitle}</h1>
+    <h2>myDogs</h2>
+    <ul>
+        {myDogs.map((dog)=> <li>{dog}</li>)}
+    </ul>
+
+    {happy ? <p>I feel good!</p> : <p>I am sads</p>}
 </HomeLayout>
