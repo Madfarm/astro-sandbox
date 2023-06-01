@@ -1,13 +1,14 @@
 ---
 import HomeLayout from '../layouts/HomeLayout.astro'
-const pageTitle = "My Blog"
+const { pageTitle } = Astro.props
 ---
 
-<HomeLayout title="My Blog">
+<HomeLayout pageTitle={pageTitle}>
     <h1>{pageTitle}</h1>
     <ul>
         <li>
             <a href="/posts/post-1">New Kid on the block</a>
+            <a href="/posts/post-2">Wumbo</a>
         </li>
     </ul>
 </HomeLayout>

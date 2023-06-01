@@ -1,4 +1,5 @@
 ---
+layout: '../../layouts/PostsLayout.astro'
 title: "Lets go Astro, lets go"
 pubDate: 2023-05-31
 description: "Trying out markdown file creation for populating an astro page. Lift off!"
